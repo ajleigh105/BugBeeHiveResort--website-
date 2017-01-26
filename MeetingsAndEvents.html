@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>Bug-Bee Resort</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="NavBar">
+  <ul class="w3-navbar w3-green w3-card-2 w3-left-align w3-large">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-padding-large w3-hover-black w3-large w3-green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    </li>
+    <li><a href="index.html" class="w3-padding-large w3-hover-black">Home</a></li>
+    <li class="w3-hide-small"><a href="Lodging.html" class="w3-padding-large w3-hover-black">Lodging</a></li>
+    <li class="w3-hide-small"><a href="LodgeAndRetreat.html" class="w3-padding-large w3-hover-black">Lodge &amp; Retreat Center</a></li>
+    <li class="w3-hide-small"><a href="Activities.html" class="w3-padding-large w3-hover-black">Activities</a></li>
+    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-black">Meetings &amp; Events</a></li>
+    <li class="w3-hide-small"><a href="Packages.html" class="w3-padding-large w3-hover-black">Packages</a></li>
+    <li class="w3-hide-small"><a href="Rates.html" class="w3-padding-large w3-hover-black">Rates</a></li>
+    <li class="w3-hide-small"><a href="History.html" class="w3-padding-large w3-hover-black">History</a></li>
+  </ul>
+
+  <!-- Navbar Mobile -->
+  <div id="NavBarM" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align w3-large w3-black">
+      <li><a class="w3-padding-large" href="Lodging.html">Lodging</a></li>
+      <li><a class="w3-padding-large" href="LodgeAndRetreat.html">Lodge &amp; Retreat Center</a></li>
+      <li><a class="w3-padding-large" href="Activities.html">Activities</a></li>
+      <li><a class="w3-padding-large" href="MeetingsAndEvents.html">Meetings &amp; Events</a></li>
+      <li><a class="w3-padding-large" href="Packages.html">Packages</a></li>
+      <li><a class="w3-padding-large" href="Rates.html">Rates</a></li>
+      <li><a class="w3-padding-large" href="History.html">History</a></li>
+    </ul>
+  </div>
+</div>
+    
+<script>
+// Controls the small screen mode menu bar. Mobile script
+function myFunction() {
+    var x = document.getElementById("NavBarM");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
